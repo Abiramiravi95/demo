@@ -10,9 +10,11 @@ public class Demo {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Abirami\\eclipse-workspace\\demosite\\Driver\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://greenstech.in/selenium-course-content.html");
-WebElement from=driver.findElement(By.xpath("(//a[text()='Corporate Training'])[1]"));
-from.click();
+		driver.get("https://en-gb.facebook.com/");
+WebElement from=driver.findElement(By.id("email"));
+from.sendKeys("abi");
+WebElement to=driver.findElement(By.id("pass"));
+to.sendKeys("abi123");
 	
 	
 	}
